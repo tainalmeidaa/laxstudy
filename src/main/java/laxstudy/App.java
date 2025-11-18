@@ -22,11 +22,12 @@ public class App extends Application {
     // Inicializar - GUI
     @Override
     public void start(Stage stage) throws Exception {
-    	FXMLLoader loader = new FXMLLoader();
-    	loader.setLocation(getClass().getResource("/views/home.fxml"));
-        VBox vbox = loader.<VBox>load();
-
-        Scene scene = new Scene(vbox, 200, 100);
+    	
+    	FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/Home.fxml"));
+        BorderPane root = loader.load();
+        
+        Scene scene = new Scene(root);
+        
         stage.setTitle("LaxStudy - Disciplinas");
         stage.setScene(scene);
         stage.show();
