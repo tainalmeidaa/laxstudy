@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="laxstudy.controller.HomeController" spacing="20">
+    <Label fx:id="label1" text="Button not clicked"/>
+    <Button text="Click me!" onAction="#reactToClick"/>
+</VBox>

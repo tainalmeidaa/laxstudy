@@ -1,0 +1,9 @@
+laxstudy\database\Database.class
+laxstudy\model\DisciplinaModel.class
+laxstudy\controller\DisciplinaController.class
+laxstudy\App.class
+laxstudy\controller\MusicaController.class
+laxstudy\model\BlocoDeEstudoModel.class
+laxstudy\model\MusicaModel.class
+laxstudy\controller\BlocoDeEstudoController.class
+laxstudy\controller\HomeController.class
