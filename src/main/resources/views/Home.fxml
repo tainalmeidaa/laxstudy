@@ -42,7 +42,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="botaoprogresso" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: white;">
+                  <Button fx:id="botaoprogresso" mnemonicParsing="false" onAction="#switchToSceneProgresso" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: white;">
                      <graphic>
                         <ImageView fitHeight="30.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -51,7 +51,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="botaocronograma" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: white;">
+                  <Button fx:id="botaocronograma" mnemonicParsing="false" onAction="#switchToSceneCronograma" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: white;">
                      <graphic>
                         <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -60,7 +60,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="botaoplaylist" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: white;">
+                  <Button fx:id="botaoplaylist" mnemonicParsing="false" onAction="#switchToScenePlaylist" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: white;">
                      <graphic>
                         <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                            <image>
