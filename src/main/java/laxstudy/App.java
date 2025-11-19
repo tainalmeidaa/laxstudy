@@ -4,7 +4,7 @@ package laxstudy;
 // Imports
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.*;
@@ -23,12 +23,11 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws Exception {
     	
-    	FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/Home.fxml"));
-        BorderPane root = loader.load();
+    	Parent root = FXMLLoader.load(getClass().getResource("/views/Home.fxml"));
         
         Scene scene = new Scene(root);
         
-        stage.setTitle("LaxStudy - Disciplinas");
+        stage.setTitle("LaxStudy - Home");
         stage.setScene(scene);
         stage.show();
 
