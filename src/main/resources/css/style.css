@@ -1,0 +1,20 @@
+/* Disciplinas.fxml */
+/* Tabela */
+.tabelaDisciplinas .column-header-background,
+.tabelaDisciplinas .column-header-background .filler,
+.tabelaDisciplinas .corner {
+	-fx-background-color: transparent;
+}
+
+.tabelaDisciplinas .column-header {
+	-fx-background-color:  #8c52ff;
+	-fx-border-color: #e6e6e6;
+}
+
+.tabelaDisciplinas .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-family: "Poppins";
+    -fx-font-size: 12px;
+	-fx-alignment: center-left;
+	-fx-padding: 5px;
+}
