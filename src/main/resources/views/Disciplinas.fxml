@@ -108,7 +108,7 @@
          <children>
             <Text fx:id="titulo" fill="#1e1d1c" layoutX="24.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: 'Poppins'; -fx-font-size: 24px;" text="Disciplinas" wrappingWidth="441.33671951293945" />
             <Text fx:id="descricao" fill="#545454" layoutX="24.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: 'Inter'; -fx-font-size: 12px;" text="Monte a sua grade de disciplinas." wrappingWidth="433.3366594314575" />
-            <TableView fx:id="tabelaDisciplinas" layoutX="24.0" layoutY="104.0" prefHeight="200.0" prefWidth="440.0" style="-fx-background-color: white; -fx-border-color: #e6e6e6; -fx-border-radius: 5; -fx-font-family: 'Inter'; -fx-font-size: 12px; -fx-text-fill: #545454; -fx-padding: 5px" styleClass="tabelaDisciplinas">
+            <TableView fx:id="tabelaDisciplinas" layoutX="24.0" layoutY="104.0" prefHeight="200.0" prefWidth="440.0" style="-fx-background-color: white; -fx-border-color: #e6e6e6; -fx-border-radius: 5; -fx-font-family: 'Inter'; -fx-font-size: 12px; -fx-text-fill: #545454" styleClass="tabelaDisciplinas">
               <placeholder>
               	<Label style="-fx-font-family: 'Inter'; -fx-font-size: 12px; -fx-text-fill: #545454" text="Nenhuma disciplina foi cadastrada." />
               </placeholder>
