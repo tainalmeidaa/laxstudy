@@ -17,6 +17,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
 import javafx.scene.layout.HBox;
 import javafx.scene.shape.SVGPath;
 import javafx.stage.Stage;
@@ -244,6 +245,7 @@ public class DisciplinaController {
         Stage stage = new Stage();
         stage.setTitle("LaxStudy - Cadastrar Disciplina");
         stage.setScene(new Scene(root));
+        stage.getIcons().add(new Image(getClass().getResourceAsStream("/images/icon.png")));
         stage.setOnHidden(e -> refreshTable());
         stage.show();
     }
@@ -258,6 +260,7 @@ public class DisciplinaController {
     	Stage stage = new Stage();
     	stage.setTitle("LaxStudy - Atualizar Disciplina");
     	stage.setScene(new Scene(root));
+        stage.getIcons().add(new Image(getClass().getResourceAsStream("/images/icon.png")));
         stage.setOnHidden(e -> refreshTable());
     	stage.show();
     }
