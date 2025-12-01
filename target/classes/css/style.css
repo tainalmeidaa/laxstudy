@@ -18,3 +18,13 @@
 	-fx-alignment: center-left;
 	-fx-padding: 5px;
 }
+
+#textTimeLeft {
+	-fx-font-size: 40px;
+	-fx-font-weight: normal;
+}
+
+.flash {
+	-fx-font-weight: bold;
+}
+

@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.chart.CategoryAxis?>
-<?import javafx.scene.chart.NumberAxis?>
-<?import javafx.scene.chart.StackedBarChart?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 
@@ -103,37 +100,42 @@
          </padding>
       </VBox>
    </left>
+   
+   
+   
    <center>
       <SplitPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <items>
-            <SplitPane dividerPositions="0.48360655737704916" prefHeight="160.0" prefWidth="200.0">
-              <items>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="168.0">
+            <SplitPane prefHeight="160.0" prefWidth="200.0">
+               <items>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
                      <children>
-                        <VBox prefHeight="197.0" prefWidth="235.0" style="-fx-background-color: #c4fed5;" />
-                        <VBox layoutX="-1.0" layoutY="199.0" prefHeight="197.0" prefWidth="235.0">
-                           <children>
-                              <StackedBarChart style="-fx-background-color: e0bcdd;" title="Progresso">
-                                <xAxis>
-                                  <CategoryAxis side="BOTTOM" />
-                                </xAxis>
-                                <yAxis>
-                                  <NumberAxis side="LEFT" />
-                                </yAxis>
-                              </StackedBarChart>
-                           </children>
+                     
+                  <!-- timer e gráfico -->
+                        <VBox prefHeight="398.0" prefWidth="271.0" style="-fx-background-color: #c2fed4;">
+                           
+                           <!-- timer -->
+                             <children>
+                                 <fx:include source="/views/components/timer/TimerComponent.fxml"/>
+                             </children>
+                             
+                           <!-- gráfico -->
+                           <!-- ....inserir aqui... -->
+                       
                         </VBox>
+                        
+                     
+                     <!-- Cronograma e disciplinas -->
+                        <VBox prefHeight="398.0" prefWidth="287.0" style="-fx-background-color: #ffc2e6;" />
+                    
                      </children>
-                  </AnchorPane>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="226.0">
-                     <children>
-                        <VBox layoutX="7.0" layoutY="2.0" prefHeight="197.0" prefWidth="235.0" style="-fx-background-color: #ffeeeb;" />
-                        <VBox layoutX="7.0" layoutY="199.0" prefHeight="197.0" prefWidth="235.0" style="-fx-background-color: #d8ff8a;" />
-                     </children>
-                  </AnchorPane>
-              </items>
+                  </HBox>
+               </items>
             </SplitPane>
          </items>
       </SplitPane>
    </center>
+   
+   
+   
 </BorderPane>
