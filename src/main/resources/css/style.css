@@ -19,6 +19,7 @@
 	-fx-padding: 5px;
 }
 
+/* Timer */
 #textTimeLeft {
 	-fx-font-size: 40px;
 	-fx-font-weight: normal;
