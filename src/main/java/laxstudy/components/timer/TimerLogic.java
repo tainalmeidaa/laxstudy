@@ -34,6 +34,12 @@ public class TimerLogic {
 
     public void start() { running = true; }
     public void pause() { running = false; }
+    public void resetToZero() {
+        try {
+            setTime("00:00:00");
+        } catch (Exception ignored) {}
+    }
+    
 
     private TimerTask task = new TimerTask() {
         @Override
